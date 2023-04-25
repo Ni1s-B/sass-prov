@@ -1,0 +1,21 @@
+h1 {
+  color: pink;
+}
+
+h2 {
+  color: Complement();
+}
+
+p {
+  font-size: 25px;
+  color: blue;
+  background-color: yellow;
+}
+
+button {
+  border: solid red 5px;
+}
+
+body {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

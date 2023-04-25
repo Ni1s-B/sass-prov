@@ -1,0 +1,33 @@
+$font:50px;
+$baccolor:green;
+$prärfärgen:pink;
+@mixin farg{
+    color:blue;
+    background-color:yellow;
+}
+@function komplementfärg($baccolor){
+    @return Complement();
+}
+@mixin border{
+    border:solid red 5px;
+}
+@function halvfont($halv){
+    @return $halv/2;
+}
+
+h1{
+    color:$prärfärgen;
+}
+h2{
+color: komplementfärg();
+}
+p{
+ font-size: halvfont($font);
+ @include farg()
+}
+button{
+    @include border()
+}
+body{
+background-color: $baccolor;
+}
